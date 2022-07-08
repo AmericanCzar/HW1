@@ -1,12 +1,3 @@
-// Homework 1: Sales Register Program
-// Course: CIS357
-// Due date: 7/6/2022
-// Name: Robert Cvetanovski
-// GitHub: CzarOfAmerica
-// Instructor: Il-Hyung Cho
-/* Program description: This project creates a cash register like program
-    that adds up the items purchased and their quantity then gives the total at the end
-    where you are able to tender the necessary money and receive tha amount of change.*/
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -40,11 +31,7 @@ class Item {
     }
 
 
-    /***
-     *
-     * @param fileData Read file data from txt file and store in array
-     * @return
-     */
+  
     public String[] readFile(String[] fileData){
         try{
             File eleFile = new File("StoringData.txt");
@@ -72,11 +59,7 @@ class Item {
         return fileData;
     }
 
-    /***
-     *
-     * @param code returns name -1
-     * @return
-     */
+  
     public String getName(int code){
         return itemName[code-1];
     }
@@ -92,12 +75,8 @@ class Item {
 
 }
 
-/**Driver Class*/
+/*Driver Class*/
 public class CashRegister {
-    /***
-     *
-     * @param args array passed to function
-     */
     public static void main(String[] args){
         // creating scanner class object
         Scanner sc = new Scanner(System.in);
@@ -135,7 +114,6 @@ public class CashRegister {
                         continue;
                     }
 
-                    /*Item Codes + quantity*/
                     System.out.println("         item name: " + n1.getName(code));
                     String itemName = n1.getName(code);
                     double price = n1.getPrice(code);
