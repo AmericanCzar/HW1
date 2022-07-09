@@ -88,7 +88,7 @@ public class CashRegister {
         double sales = 0;
 
         // Print output
-        System.out.println("Welcome to Cvetanovski cash register system!");
+        System.out.println("Welcome to the cash register system!");
         System.out.println("Beginning a new sale (Y/N)");
         String ans = sc.next();
 
